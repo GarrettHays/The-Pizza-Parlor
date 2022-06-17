@@ -45,13 +45,13 @@ Pizza.prototype.pizzaPricer = function() {
     this.price =+ 27;
   }
   if (this.topping.length <= 1 && this.size === "Giant") {
-    this.price += 18; 
+    this.price += 20; 
   } else if (this.topping.length <= 2 && this.size === "Giant") {
-    this.price += 20;
-  } else if (this.topping.length <= 4 && this.size === "Giant") {
     this.price += 22;
+  } else if (this.topping.length <= 4 && this.size === "Giant") {
+    this.price += 24;
   } else if (this.topping.length >= 4 && this.size === "Giant") {
-    this.price =+ 27;
+    this.price =+ 29;
   }
   return this.price;
 };
@@ -74,8 +74,13 @@ $(document).ready(function() {
     $(".pizza-topping-select").text(newPizza.topping);
     $(".order-total").text(pizzaPrice);
 
-    // $("#pizza-order").show();
-    // $("#pizza-form").hide();
+    $("#pizza-order").show();
+    $("#pizza").hide();
+
+    $("#complete").sumbit(function() {
+      $("#pizza-order").hide();
+      $("#pizza").hide();
+    });
   });
 });
 
