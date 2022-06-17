@@ -27,7 +27,7 @@
                 <option value="medium">Medium - 14" - $14</option>
                 <option value="large">Large - 16" - $16</option>
                 <option value="Xlarge">Xtra-Large - 18" - $18</option>
-                <option value="Giant">Large - 24" - $20</option>
+                <option value="Giant">Giant - 24" - $20</option>
               </select>
             </div>
           </div>
@@ -35,94 +35,93 @@
           <div class = "row">
             <div class="col-sm-6">
             <h2>TOPPINGS:</h2>
-            <p>All pizzas come standard with cheese. If you would like 2 toppings, $2 will be added to the base price of your pizza. 4 toppings will add $4, and 4 or more toppings will add a flat $6.</p>
+            <p>All pizzas come standard with cheese and your choice of 1 topping. If you would like 2 toppings, $2 will be added to the base price of your pizza. 3-4 toppings will add $4, and more than 4 toppings will add a flat $9.</p>
             <p>Please make your selections below:</p>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="pepperoni">
+              <input type="checkbox" name="topping" value=" pepperoni">
               <label for="pepperoni">Pepperoni</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="onion">
+              <input type="checkbox" name="topping" value=" onion">
               <label for="onion">Onion</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="sausage">
+              <input type="checkbox" name="topping" value=" sausage">
               <label for="sausage">Sausage</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="pepper">
+              <input type="checkbox" name="topping" value=" pepper">
               <label for="pepper">Peppers</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="mushroom">
+              <input type="checkbox" name="topping" value=" mushroom">
               <label for="mushroom">Mushrooms</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="bacon">
+              <input type="checkbox" name="topping" value=" bacon">
               <label for="bacon">Bacon</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="olive">
+              <input type="checkbox" name="topping" value=" olive">
               <label for="olive">Olives</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="pineapple">
+              <input type="checkbox" name="topping" value=" pineapple">
               <label for="pineapple">Pineapple</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="spinach">
+              <input type="checkbox" name="topping" value=" spinach">
               <label for="spinach">Spinach</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="extra cheese">
+              <input type="checkbox" name="topping" value=" extra cheese">
               <label for="extra cheese">Extra Cheese</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="artichoke">
+              <input type="checkbox" name="topping" value=" artichoke">
               <label for="artichoke">Artichoke Hearts</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="BBQ Chicken">
+              <input type="checkbox" name="topping" value=" BBQ Chicken">
               <label for="BBQ Chicken">BBQ Chicken</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="Canadian Bacon">
+              <input type="checkbox" name="topping" value=" Canadian Bacon">
               <label for="Canadian Bacon">Canadian Bacon</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="Garlic">
+              <input type="checkbox" name="topping" value=" Garlic">
               <label for="Garlic">Garlic</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="Jalapenos">
+              <input type="checkbox" name="topping" value=" Jalapenos">
               <label for="Jalapenos">Jalapenos</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="Mama Lil's Peppers">
+              <input type="checkbox" name="topping" value=" Mama Lil's Peppers">
               <label for="Mama Lil's Peppers">Mama Lil's Peppers</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="Red Onions">
+              <input type="checkbox" name="topping" value=" Red Onions">
               <label for="Red Onions">Red Onions</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="Sundried Tomatoes">
+              <input type="checkbox" name="topping" value=" Sundried Tomatoes">
               <label for="Sundried Tomatoes">Sundried Tomatoes</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="Zucchini">
+              <input type="checkbox" name="topping" value=" Zucchini">
               <label for="Zucchini">Zucchini</label>
             </div>
             <div class="col-sm-3">
-              <input type="checkbox" name="topping" value="Salami">
+              <input type="checkbox" name="topping" value=" Salami">
               <label for="Salami">Salami</label>
             </div>
           </div>
-          <p></p>
-            <button type="submit" class="btn-lg">Place Your Order</button>
+            <button type="submit" class="btn-lg">Add To Order</button>
           </div>
         </div>
       </form>
@@ -131,11 +130,22 @@
     <div class="container">
       <div id="pizza-order">
         <div class="row">
-          <h2 id=>TOTAL:</h2>
+          <h2>ORDER DETAILS:</h2>
         </div>
-        <div class="row">
-          <h2>Order Total: $<span class="order-total"></span></h2>
+        <div class="table">
+          <h3>Pizza Size: </h3>
+          <ul>
+            <li><span class="pizza-size-select"></span></li>
+          </ul>
+          <h3>Pizza Toppings: </h3>
+          <ul>
+            <li><span class="pizza-topping-select"></span> </span></li>
+          </ul>
         </div>
+          <h2>TOTAL:</h2>
+          <h5>Order Total: $<span class="order-total"></span></h5>
+          <br>
+          <button type="submit" id="complete" class="btn-lg">Sumbit Order</button>
       </div>
     </div>
   </body>
