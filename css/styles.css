@@ -9,3 +9,23 @@
 body {
   margin-bottom: 50px;
 }
+
+h1 {
+  color: white;
+  text-shadow: 0 0 10px red;
+  font-size: 75px;
+}
+
+h5 {
+  color: white;
+  text-shadow: 0 0 5px red;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color:rgba(255, 1, 1, 0.679);
+}
+
+.btn:hover {
+  background-color:rgba(255, 1, 1, 0.679);
+}
