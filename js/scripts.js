@@ -8,8 +8,6 @@ function Pizza(size) {
 Pizza.prototype.pizzaPricer = function() {
   if (this.topping.length <= 1 && this.size === "small") {
     this.price += 12; 
-    console.log(this.topping.length);
-    console.log(this.size);
   } else if (this.topping.length <= 2 && this.size === "small") {
     this.price += 14;
   } else if (this.topping.length <= 4 && this.size === "small") {
