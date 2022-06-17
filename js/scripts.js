@@ -77,9 +77,10 @@ $(document).ready(function() {
     $("#pizza-order").show();
     $("#pizza").hide();
 
-    $("#complete").sumbit(function() {
+    $("#complete").click(function() {
       $("#pizza-order").hide();
       $("#pizza").hide();
+      $("#thanks").show();
     });
   });
 });
