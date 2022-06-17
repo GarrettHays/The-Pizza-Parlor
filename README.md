@@ -19,7 +19,7 @@ _This project creates an application that intakes user input and runs it through
 
 | Test Description  | Input Example (Code) | Expected Output Example |
 | ------------- | ------------- | ------------- |
-| It should accept user input for size of pizza and toppings.  | $(".pizza-size-select").text(pizzaSize), $(".pizza-topping-select").text(newPizza.topping)  | --  |
+| It should accept user input for size of pizza and toppings.  | jQuery(".pizza-size-select").text(pizzaSize), jQuery(".pizza-topping-select").text(newPizza.topping)  | --  |
 | It should calculate a total based on user input and return that total upon user click of "add to order".  | $(".order-total").text(pizzaPrice); | $22  |
 | It should display pizza size and toppings alongside total upon user click of "add to order"  | $(".order-total").text(pizzaPrice); | Pizza Size: medium, Pizza Toppings: Pepperoni, $22  |
 | It should allow user to submit order upon click of "submit order" button  | $("#complete").click(function() | Thank You Page |
