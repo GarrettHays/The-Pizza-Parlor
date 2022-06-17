@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>The Pizza Parlor</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+            <h1>The Pizza Parlor</h1>
+            <h5>Thank you for visiting The Pizza Parlor. <br> Please begin your order by first selecting the size of your pizza. <br> Once you've selected your size, add as many toppings as you'd like.</h5>
+      </div>
+    </div>
+
+    <div class ="container">
+      <form id ="pizza">
+        <div class ="form-group">
+          <div class ="row">
+            <div class="col-sm-6">
+              <label for = "size"><h2>SIZE:</h2></label>
+              <select class = "form-control" id="size">
+                <option disabled selected> Choose Size </option>
+                <option value="small">Small - 10" - $12</option>
+                <option value="medium">Medium - 14" - $14</option>
+                <option value="large">Large - 16" - $16</option>
+                <option value="Xlarge">Xtra-Large - 18" - $18</option>
+                <option value="Giant">Large - 24" - $20</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class = "row">
+            <div class="col-sm-6">
+            <h2>TOPPINGS:</h2>
+            <p>All pizzas come standard with cheese. If you would like 2 toppings, $2 will be added to the base price of your pizza. 4 toppings will add $4, and 4 or more toppings will add a flat $6.</p>
+            <p>Please make your selections below:</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="pepperoni">
+              <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="onion">
+              <label for="onion">Onion</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="sausage">
+              <label for="sausage">Sausage</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="pepper">
+              <label for="pepper">Peppers</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="mushroom">
+              <label for="mushroom">Mushrooms</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="bacon">
+              <label for="bacon">Bacon</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="olive">
+              <label for="olive">Olives</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="pineapple">
+              <label for="pineapple">Pineapple</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="spinach">
+              <label for="spinach">Spinach</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="extra cheese">
+              <label for="extra cheese">Extra Cheese</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="artichoke">
+              <label for="artichoke">Artichoke Hearts</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="BBQ Chicken">
+              <label for="BBQ Chicken">BBQ Chicken</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="Canadian Bacon">
+              <label for="Canadian Bacon">Canadian Bacon</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="Garlic">
+              <label for="Garlic">Garlic</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="Jalapenos">
+              <label for="Jalapenos">Jalapenos</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="Mama Lil's Peppers">
+              <label for="Mama Lil's Peppers">Mama Lil's Peppers</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="Red Onions">
+              <label for="Red Onions">Red Onions</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="Sundried Tomatoes">
+              <label for="Sundried Tomatoes">Sundried Tomatoes</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="Zucchini">
+              <label for="Zucchini">Zucchini</label>
+            </div>
+            <div class="col-sm-3">
+              <input type="checkbox" name="topping" value="Salami">
+              <label for="Salami">Salami</label>
+            </div>
+          </div>
+          <p></p>
+            <button type="submit" class="btn-lg">Place Your Order</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <div id="pizza-order">
+        <div class="row">
+          <h2 id=>TOTAL:</h2>
+        </div>
+        <div class="row">
+          <h2>Order Total: $<span class="order-total"></span></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+   
