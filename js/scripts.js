@@ -81,6 +81,10 @@ $(document).ready(function() {
       $("#pizza-order").hide();
       $("#pizza").hide();
       $("#thanks").show();
+
+    $("#start-new").click(function() {
+      window.location.reload();
+    });
     });
   });
 });
