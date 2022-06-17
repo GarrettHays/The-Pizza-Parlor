@@ -19,6 +19,8 @@ _This project creates an application that intakes user input and runs it through
 
 | Test Description  | Input Example (Code) | Expected Output Example |
 | ------------- | ------------- | ------------- |
+| It should return a Pizza object with properties for toppings, size and price.  | const newPizza = new Pizza(["pepperoni", "extra cheese"], "medium", 12); | newPizza { toppings: ["pepperoni", "extra cheese"], size: "medium", price: 12 |
+| It should accept user input for size of pizza.  | pizzaPricer() | --  |
 | It should accept user input for size of pizza.  | $(".pizza-size-select").text(pizzaSize)  | --  |
 | It should accept user input for pizza toppings.  | $(".pizza-topping-select").text(newPizza.topping)  | --  |
 | It should calculate a total based on user input and return that total upon user click of "add to order".  | $(".order-total").text(pizzaPrice); | $22  |
